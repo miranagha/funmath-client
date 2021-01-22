@@ -1,0 +1,22 @@
+.LoginHero {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .LoginHero {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    /*background-image: url('../../../assets/images/adminLoginHero.svg');*/
+    background-image: url('../../../assets/images/cartoonnetwork.gif');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center center;
+  }
+}
+.LoginContainer {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}

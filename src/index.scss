@@ -1,0 +1,69 @@
+$theme-colors: (
+  'primary': #343fdf,
+  'secondary': #18a748,
+  'success': #0fb800,
+  'info': #00b8d8,
+  'warning': #ff5100,
+  'danger': #ff2222,
+  'light': #e9ecef,
+  'dark': #212529,
+);
+$enable-responsive-font-sizes: true;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+//@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Material+Icons&family=Montserrat:wght@400;500;600;700;800&family=Open+Sans&display=swap');
+
+@font-face {
+  font-family: Fontalicious;
+  src:url("fonts/agent-orange/AgentOrange.ttf");
+}
+
+body {
+  background: #f8f9fb;
+  //background-image: url('./assets/images/background.svg');
+  background-image: url('./assets/images/kidsplay.gif');
+  background-repeat: no-repeat;
+
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+  //background-repeat: repeat;
+  font-family: 'Open Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.header {
+  //font-family: 'Montserrat', sans-serif;
+  font-family: 'Fontalicious';
+  font-weight: 600;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Fontalicious;
+}
+
+.rounded-card {
+  border-radius: 1em;
+  border: none;
+  overflow: hidden;
+}
+
+.hoverable {
+  transform: translateY(0);
+  transition-duration: 0.25s;
+}
+
+.hoverable:hover {
+  transform: translateY(-0.25em);
+  transition-duration: 0.25s;
+}

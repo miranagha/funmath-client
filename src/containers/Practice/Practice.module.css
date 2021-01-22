@@ -1,0 +1,47 @@
+.ContainerCard {
+  border-radius: 1em;
+  border: none;
+  box-shadow: 0.25em 0.5em 1em rgba(0, 0, 0, 0.15);
+  margin: 1em auto;
+  padding: 1em;
+  min-height: 80vh;
+}
+.ListGroup {
+  border-radius: 0.5em;
+}
+.ListItem {
+  border-radius: 0.5em;
+  border: none;
+  margin: 0.25em auto;
+}
+.Selected {
+  background-color: var(--primary);
+  filter: brightness(110%);
+  color: #ffffff;
+}
+.Selected:hover,
+.ListItem:focus {
+  background-color: var(--primary);
+  filter: none;
+  color: #ffffff;
+}
+.Correct,
+.Correct:disabled {
+  background-color: var(--success);
+  color: #ffffff;
+}
+.Correct:hover {
+  background-color: var(--success);
+  filter: brightness(90%);
+  color: #ffffff;
+}
+.Incorrect,
+.Incorrect:disabled {
+  background-color: var(--danger);
+  color: #ffffff;
+}
+.Incorrect:hover {
+  background-color: var(--danger);
+  filter: brightness(90%);
+  color: #ffffff;
+}
